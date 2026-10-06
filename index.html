@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BIGGERWISH — useful lifestyle accessories and handy gadgets.">
+  <title>BIGGERWISH — Smart Finds. Everyday Better.</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="#home">BIGGER<span>WISH</span></a>
+    <nav>
+      <a href="#shop">Shop</a>
+      <a href="#trending">Trending</a>
+      <a href="#why">Why Us</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <button class="cart-btn" id="cartBtn">Cart <span id="cartCount">0</span></button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">SMART FINDS • EVERYDAY ESSENTIALS</p>
+        <h1>Small things.<br><span>Big difference.</span></h1>
+        <p class="hero-text">Discover clever lifestyle accessories and handy gadgets designed to make everyday life easier.</p>
+        <a class="primary-btn" href="#shop">Explore Products</a>
+      </div>
+      <div class="hero-card">
+        <div class="floating-tag">NEW FINDS</div>
+        <div class="hero-orb">✦</div>
+        <p>Curated gadgets<br>worth wishing for.</p>
+      </div>
+    </section>
+
+    <section class="trust-row">
+      <div><strong>✓</strong><span>Useful products</span></div>
+      <div><strong>✓</strong><span>Secure checkout</span></div>
+      <div><strong>✓</strong><span>Carefully selected</span></div>
+      <div><strong>✓</strong><span>Support when needed</span></div>
+    </section>
+
+    <section class="section" id="shop">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">SHOP BIGGERWISH</p>
+          <h2>Made for everyday life.</h2>
+        </div>
+        <div class="filters">
+          <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="gadgets">Gadgets</button>
+          <button class="filter" data-filter="home">Home</button>
+          <button class="filter" data-filter="lifestyle">Lifestyle</button>
+        </div>
+      </div>
+      <div class="products" id="productGrid"></div>
+    </section>
+
+    <section class="banner" id="trending">
+      <div>
+        <p class="eyebrow">TRENDING NOW</p>
+        <h2>Find something you<br>didn't know you needed.</h2>
+      </div>
+      <a class="light-btn" href="#shop">See all finds →</a>
+    </section>
+
+    <section class="section why" id="why">
+      <p class="eyebrow">WHY BIGGERWISH</p>
+      <h2>Simple shopping.<br>Better finds.</h2>
+      <div class="benefits">
+        <article><span>01</span><h3>Useful over useless</h3><p>We focus on practical products that solve small everyday problems.</p></article>
+        <article><span>02</span><h3>Curated selection</h3><p>Less scrolling, more discovering. Browse a focused collection of interesting finds.</p></article>
+        <article><span>03</span><h3>Made for mobile</h3><p>A fast, clean shopping experience built to work beautifully on your phone.</p></article>
+      </div>
+    </section>
+
+
+    <section class="reviews section" id="reviews">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">CUSTOMER LOVE</p>
+          <h2>People are wishing<br>for more.</h2>
+        </div>
+        <div class="review-summary">
+          <strong>4.8</strong>
+          <span class="stars">★★★★★</span>
+          <small>Based on 100+ reviews</small>
+        </div>
+      </div>
+      <div class="review-grid">
+        <article class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>“The little gadgets I ordered are actually useful. Everything arrived nicely packed and the quality was better than I expected.”</p>
+          <div class="reviewer"><span class="avatar">A</span><div><strong>Arjun K.</strong><small>Verified customer</small></div></div>
+        </article>
+        <article class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>“Really liked the selection. I found a phone stand and cable holder that I now use every day. Great value for the price.”</p>
+          <div class="reviewer"><span class="avatar">S</span><div><strong>Sneha R.</strong><small>Verified customer</small></div></div>
+        </article>
+        <article class="review-card">
+          <div class="stars">★★★★☆</div>
+          <p>“Simple shopping experience and the product was exactly what I needed. Will definitely check BIGGERWISH again for new finds.”</p>
+          <div class="reviewer"><span class="avatar">M</span><div><strong>Mohammed A.</strong><small>Verified customer</small></div></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="faq section" id="faq">
+      <p class="eyebrow">QUESTIONS</p>
+      <h2>Frequently asked.</h2>
+      <details><summary>How do I place an order?</summary><p>Select a product, add it to your cart, and use the checkout button. Connect your preferred payment/order system before launching.</p></details>
+      <details><summary>How long does delivery take?</summary><p>Delivery time depends on the supplier and destination. Add your actual delivery estimate before publishing product listings.</p></details>
+      <details><summary>Can I return an item?</summary><p>Yes, if your store policy allows it. Replace this text with your final return and refund policy.</p></details>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-logo">BIGGERWISH</div>
+    <p>Smart finds. Everyday better.</p>
+    <div class="footer-links"><a href="#shop">Shop</a><a href="#faq">FAQ</a><a href="mailto:hello@biggerwish.com">Contact</a></div>
+    <small>© 2026 BIGGERWISH. All rights reserved.</small>
+  </footer>
+
+  <aside class="cart" id="cart">
+    <div class="cart-head"><h2>Your Cart</h2><button id="closeCart">×</button></div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-bottom">
+      <div><span>Total</span><strong id="cartTotal">₹0</strong></div>
+      <button class="primary-btn checkout" id="checkoutBtn">Continue to Checkout</button>
+      <p class="small">Checkout/payment integration can be connected before launch.</p>
+    </div>
+  </aside>
+  <div class="overlay" id="overlay"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
